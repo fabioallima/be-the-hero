@@ -8,8 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-//01:21:00 min
-
-
+// 01:21:00 min
 
 app.listen(3333);
