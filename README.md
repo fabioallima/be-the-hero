@@ -131,7 +131,7 @@ How would you like to define a style for your project? (Use arrow keys)
 *  YAML 
 *  JSON
 
-> yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+> yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint eslint-plugin-jest -D
 
 cria um arquivo: *`.eslintrc.js`*:
 
@@ -141,6 +141,7 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    jest: true,
   },
   extends: ['airbnb-base', 'prettier'],
   globals: {
@@ -150,8 +151,14 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
+  plugins: ['jest'],
   rules: {
     camelcase: 'off',
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error',
   },
 };
 ```
@@ -164,6 +171,19 @@ cria um arquivo: *`.prettierrc`*:
   "trailingComma": "es5"
 }
 ```
+### Instalando Celebrate (Fazer validações do Request):
+> yarn add celebrate
+
+### Instalando Jest:
+> yarn add jest
+
+> yarn jest --init
+
+√ Would you like to use Jest when running "test" script in "package.json"? ❯ **yes**
+√ Choose the test environment that will be used for testing » ❯ **node**
+√ Do you want Jest to add coverage reports? ❯ **no**
+√ Automatically clear mock calls and instances between every test? ❯ **yes**
+
 
 ## React
 
