@@ -8,12 +8,12 @@ Desenvolvimento para aprendizagem em JavaScript com a Semana Omnistack 11 da Roc
 ### Caso ocorra problemas com police de segurança no Windows execute:
 > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
-###Iniciar Projeto Mobile:
+### Iniciar Projeto Mobile:
 > expo init mobile
 
 ? Choose a template: expo-template-blank
 
-###Instalando react-navigation: (https://reactnavigation.org/docs/getting-started)
+### Instalando react-navigation: (https://reactnavigation.org/docs/getting-started)
 > npm install @react-navigation/native
 
 > expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
@@ -21,14 +21,14 @@ Desenvolvimento para aprendizagem em JavaScript com a Semana Omnistack 11 da Roc
 > npm install @react-navigation/stack
 
 
-###Instalando constants:
+### Instalando constants:
 > expo install expo-constants
 
-###Instalando Mail Composer:
+### Instalando Mail Composer:
 > npm install expo-mail-composer
 
-###Instalação do Axios no Mobile:
+### Instalação do Axios no Mobile:
 yarn add axios
 
-###Instalando intl
+### Instalando intl
 > yarn add intl
